@@ -1,0 +1,22 @@
+<!--h2>{{task.description}}</h2>
+<p>
+  {{memberName}} - 
+  {{task.due_date.day}}.{{task.due_date.month}}.{{task.due_date.year}}
+</p>
+<p>
+  {{task.points}}pt.
+</p-->
+<div class="row">
+	<div class="col col-75">{{task.description}}</div>
+</div>
+<div class="row">
+	<div class="col col-75"><p>{{memberName}}</p></div>
+	<div class="col">
+		<p>{{task.points}} pt.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col col-75">
+		<p>{{task.due_date.day}}.{{task.due_date.month}}.{{task.due_date.year}}</p>
+	</div>
+</div>

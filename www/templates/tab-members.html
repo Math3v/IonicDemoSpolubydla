@@ -1,0 +1,11 @@
+<ion-view view-title="Members">
+  <ion-content>
+    <div class="list">
+      <a class="item item-icon-left" ng-repeat="member in members | orderBy:'-points'">
+        <i class="icon ion-person" ng-class="getColor(member.id)"></i>
+        {{member.name}}
+        <span class="item-note">{{member.points}} pt.</span>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

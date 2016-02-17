@@ -1,0 +1,14 @@
+<ion-view view-title="My Tasks">
+  <ion-content>
+    <div class="list">
+      <a class="item item-icon-left item-icon-right" 
+         ng-repeat="task in tasks | filter:{ member_id: 538 }"
+         ng-click="toggleDone(task)">
+        <i class="icon ion-person" ng-class="getColor(task.member_id)"></i>
+        <task-directive task="task" member-name="members[task.member_id].name"></task-directive>
+        <i class="icon ion-android-checkbox-outline" ng-if="task.done"></i>
+        <i class="icon ion-android-checkbox-outline-blank" ng-if="!task.done"></i>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

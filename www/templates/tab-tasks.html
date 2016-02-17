@@ -1,0 +1,10 @@
+<ion-view view-title="Tasks">
+  <ion-content>
+    <div class="list">
+      <a class="item item-icon-left" ng-repeat="task in tasks">
+        <i class="icon ion-person" ng-class="getColor(task.member_id)"></i>
+        <task-directive task="task" member-name="members[task.member_id].name"></task-directive>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

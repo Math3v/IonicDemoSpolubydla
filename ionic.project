@@ -1,0 +1,12 @@
+{
+  "name": "Spolubydla",
+  "app_id": "977ee501",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
